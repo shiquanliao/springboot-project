@@ -8,6 +8,7 @@ import org.springframework.data.domain.jaxb.SpringDataJaxb;
 
 /**
  * Created by SqMax on 2018/3/18.
+ * OrderDTO 数据传输对象
  */
 public interface OrderService {
 

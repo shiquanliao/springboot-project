@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
@@ -41,6 +42,7 @@ public class ProductServiceImplTest {
 
     @Test
     public void findAll() {
+        // PageRequest 实现了 Pageable
         PageRequest request=new PageRequest(0,2);
         Page<ProductInfo> productInfoPage=productService.findAll(request);
 //        System.out.println(productInfoPage.getTotalElements());
